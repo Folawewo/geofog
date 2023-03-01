@@ -5,4 +5,13 @@ require('dotenv').config();
 
 const app = express();
 
+app.get('/weather/:location', async (req, res) => {
+  try {
+    const { location } = req.params;
+    const response = await axios.get(
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.API_KEY}`
+    );
+  } catch (error) {}
+});
+
 module.exports = app;
