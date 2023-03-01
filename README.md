@@ -1,0 +1,2 @@
+# geofog
+Weather API
