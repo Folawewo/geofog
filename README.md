@@ -1,6 +1,6 @@
 # Geofog
 
-Geofog weather API is built with Express that provides current weather information for a given location. It uses the OpenWeatherMap API to retrieve weather data and returns it in JSON format.
+Geofog weather API is built with Express. It provides current weather information for a given location. It uses the OpenWeatherMap API to retrieve weather data and returns it in JSON format.
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ Example Request
 
 ```http
 GET /weather/london
-or
+
 GET /weather?q=London,UK&units=metric
 ```
 
